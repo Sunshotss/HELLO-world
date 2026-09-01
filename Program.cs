@@ -44,24 +44,32 @@ while (true)
 
     for (int i = 0; i < list.Count(); i++)
     {
+        if (list[i] == 10) { list2[i] += 1; list[i] = 0; }
+        
         Console.Write($" {list[i]}");
     }
     Console.SetCursorPosition(5, 7);
-
+     
     for (int i = 0; i < list.Count(); i++)
     {
+        if (list2[i] == 10) { list3[i] += 1; list2[i] = 0; }
+        
         Console.Write($" {list2[i]}");
     }
     Console.SetCursorPosition(5, 9);
 
     for (int i = 0; i < list.Count(); i++)
     {
+        if (list3[i] == 10) { list4[i] += 1; list3[i] = 0; }
+        
         Console.Write($" {list3[i]}");
     }
     Console.SetCursorPosition(5, 11);
 
     for (int i = 0; i < list.Count(); i++)
     {
+        if (list4[i] == 10) { list5[i] += 1; list4[i] = 0; }
+
         Console.Write($" {list4[i]}");
     }
     Console.SetCursorPosition(5, 13);
